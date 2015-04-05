@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AlbaRemoteControl</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="camera_control">Camera control</string>
+    <string name="robot_control">Robot control</string>
+</resources>
