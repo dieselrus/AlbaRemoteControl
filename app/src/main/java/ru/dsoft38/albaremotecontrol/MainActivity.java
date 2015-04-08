@@ -1,5 +1,7 @@
 package ru.dsoft38.albaremotecontrol;
 
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -7,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ImageView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -25,6 +28,11 @@ public class MainActivity extends ActionBarActivity {
             case R.id.imgRobotStick:
                 Log.i(dLog, "X = " + String.valueOf(view.getPivotX()) +" Y = " + String.valueOf(view.getPivotY()));
                 view.setX(10);
+
+                ImageView imageView = (ImageView)findViewById(R.id.imgRobotStick);
+                Drawable drawable = imageView.getDrawable();
+                Rect imageBounds = drawable.getBounds();
+
                 break;
             case R.id.imgCameraStick:
 
